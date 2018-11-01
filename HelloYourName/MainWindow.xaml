@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloYourName"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+  <Grid>
+    <TextBlock HorizontalAlignment="Center"
+               Margin="0, 100px, 0, 0"
+               TextWrapping="Wrap"
+               Text="Please enter your name"
+               VerticalAlignment="Top"
+               FontSize="24px"/>
+    <TextBox x:Name="userName"
+             HorizontalAlignment="Center"
+             Height="auto"
+             Margin="0,200px,0,0"
+             TextWrapping="NoWrap"
+             VerticalAlignment="Top"
+             Width="200" 
+             FontSize="16"/>
+    <Button x:Name="ok"
+            Content="OK"
+            HorizontalAlignment="Center"
+            Margin="0,250,0,0"
+            VerticalAlignment="Top"
+            Width="35px"
+            Click="ok_Click" />
+
+
+
+  </Grid>
 </Window>

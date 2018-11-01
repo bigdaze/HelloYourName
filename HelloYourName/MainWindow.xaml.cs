@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace HelloYourName
 {
@@ -23,6 +24,11 @@ namespace HelloYourName
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ok_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Hello " + userName.Text);
         }
     }
 }
